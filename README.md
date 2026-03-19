@@ -38,7 +38,7 @@ analysis tools.
 
 ## Prerequisites
 
-Supported python versions: ![Python version](https://img.shields.io/badge/python-3.8.*|3.9.*|3.10.*|3.11.*-blue.svg). Also vesion 3.6 and 3.7  are supperted but not tested.
+Supported python versions: ![Python version](https://img.shields.io/badge/python-|3.10.*|3.11.*|3.12.*-blue.svg). Also vesion 3.8 and 3.9  are supperted but not tested.
 
 To run the tests you need to install ```PyTest``` and ```Hypothesis```.
 Installation instructions are available at: [PyTest](https://docs.pytest.org/en/6.2.x/getting-started.html), [Hypothesis](https://docs.pytest.org/en/6.2.x/getting-started.html)

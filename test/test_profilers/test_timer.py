@@ -27,10 +27,10 @@ def test_timer_context_manager(name):
     with Timer(name, mock):
         sleep(0.01)  # Breve pausa per garantire un tempo > 0
     
+    elapsed_time = float(mock.message.split(": ")[1])
     assert name in mock.message
     assert "elapsed:" in mock.message
     # Estrae il valore numerico e verifica che sia positivo
-    elapsed_time = float(mock.message.split(": ")[1])
     assert elapsed_time >= 0.01
 
 

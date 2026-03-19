@@ -63,14 +63,14 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 
 # Package-Metadata
-NAME = "Personal Use Macro Archive (PUMA)"
+NAME = "PUMA"
 DESCRIPTION = 'PUMA is a more or less organized and structured collection of utilities code snipped analysis tools.'
 URL = 'https://github.com/RiccardoBiondi/PUMA'
 EMAIL = 'riccardo.biondi7@unibo.it'
 AUTHOR = 'Riccardo Biondi'
 VERSION = '0.0.1'
 KEYWORDS = 'programming utilities snipped python '
-#REQUIREMENTS_FILENAME = os.path.join(here, 'requirements.txt')
+REQUIREMENTS_FILENAME = os.path.join(here, 'requirements.txt')
 #VERSION_FILENAME = os.path.join(here, 'IPT', '__version__.py')
 README_FILENAME = os.path.join(here, 'README.md')
 
@@ -96,11 +96,11 @@ about['__version__'] = VERSION
 
 setup(
     name=NAME,
-    version=about['__version__'],
+    version=1.0,
     author=AUTHOR,
     author_email=EMAIL,
-    mantainer=AUTHOR,
-    mantainer_email=EMAIL,
+    #mantainer=AUTHOR,
+    #mantainer_email=EMAIL,
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
@@ -110,7 +110,7 @@ setup(
     packages=find_packages(include=['PUMA','PUMA.*'], exclude=('test', 'testing')),
     include_package_data=True, # no absolute paths are allowed
     platforms='any',
-    #install_requires=get_requires(REQUIREMENTS_FILENAME),
+    install_requires=get_requires(REQUIREMENTS_FILENAME),
 
     classifiers=[
         "Programming Language :: Python :: 3",
